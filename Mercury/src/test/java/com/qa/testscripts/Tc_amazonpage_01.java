@@ -46,7 +46,9 @@ public class Tc_amazonpage_01 extends TestBase{
 	 slct.selectByVisibleText(catagory);
 	 AmazonSearch.amznSearchBox.sendKeys(items+Keys.ENTER);
 	Thread.sleep(3000);
-	driver.navigate().to("https://www.amazon.in/");
+	driver.navigate().back();
+	Thread.sleep(3000);
+
 }
 }
 
